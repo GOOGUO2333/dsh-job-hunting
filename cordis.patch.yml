@@ -1,0 +1,4 @@
+- insert:
+    - id: job-hunting
+      name: 'dsh-plugin-job-hunting'
+      config: {}

@@ -1,0 +1,6 @@
+node_modules/
+career-plan-*.md
+career-plan-*.html
+career-plan-*.docx
+*.log
+.DS_Store

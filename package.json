@@ -1,0 +1,39 @@
+{
+  "name": "dsh-plugin-job-hunting",
+  "version": "1.2.2",
+  "type": "module",
+  "description": "Multi-site job search with posting liveness verification and resume-aware matching, plus profile-driven career planning.",
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "plugin",
+    "job-hunting",
+    "resume",
+    "career-planning"
+  ],
+  "license": "MIT",
+  "exports": {
+    ".": "./index.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "careers.js",
+    "resume.js",
+    "docx.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node test/resume-check.mjs && node test/resume-search.mjs && node test/career-check.mjs && node test/check-caps.mjs"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}
